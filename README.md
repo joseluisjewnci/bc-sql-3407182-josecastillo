@@ -15,6 +15,6 @@ Se insertaron datos de prueba y se realizaron consultas SELECT básicas para vis
 
 ## Cómo ejecutar
 
-```bash
+### en bash
 sqlite3 mi_dominio.db < proyecto.sql
 sqlite3 mi_dominio.db
