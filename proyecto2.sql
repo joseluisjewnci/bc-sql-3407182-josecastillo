@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS bikes (
 
 CREATE TABLE IF NOT EXISTS parts (
     id INTEGER PRIMARY KEY,
-    nombre TEXT NOT NULL,
+    name TEXT NOT NULL,
     price REAL NOT NULL CHECK (price > 0),
     stock INTEGER NOT NULL DEFAULT 0 CHECK (stock >= 0)
 );
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS sales (
 CREATE TABLE IF NOT EXISTS repairs (
     id INTEGER PRIMARY KEY,
     bike_id INTEGER NOT NULL,
-    descripcion TEXT NOT NULL,
+    description TEXT NOT NULL,
     cost REAL NOT NULL CHECK (cost > 0),
     date TEXT NOT NULL,
     FOREIGN KEY (bike_id) REFERENCES bikes(id)
@@ -85,7 +85,7 @@ INSERT INTO bikes (brand, model, price, stock) VALUES
 ('Specialized', 'Rockhopper Comp',3490000 ,5);
 
 -- parts (5 registros)
-INSERT INTO parts (nombre, price, stock) VALUES
+INSERT INTO parts (name, price, stock) VALUES
 ('Llanta',50000, 25),
 ('Cadena', 20000, 20),
 ('Frenos', 85000,27),
@@ -101,7 +101,7 @@ INSERT INTO sales (bike_id, quantity, total, date) VALUES
 (5, 1, 3669990, '2026-04-12');
 
 -- repairs (5 registros)
-INSERT INTO repairs (bike_id, descripcion, cost, date) VALUES
+INSERT INTO repairs (bike_id, description, cost, date) VALUES
 (1,'Cambio de llanta', 50000, '2026-04-13'),
 (2,'Cambio de cadena', 35000, '2026-04-13'),
 (3,'Cambio de frenos', 30000, '2026-04-15'),
