@@ -32,5 +32,5 @@ También se mantuvieron las relaciones entre tablas mediante claves foraaneas y 
 ## Cómo ejecutar en bash
 
 
-sqlite3 mi_dominio.db < proyecto3.sql
-sqlite3 mi_dominio.db
+sqlite3 tienda_bicicletas.db < proyecto3.sql
+sqlite3 tienda_bicicletas.db
