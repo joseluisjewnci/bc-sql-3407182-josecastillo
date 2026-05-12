@@ -16,5 +16,5 @@ Se insertaron datos de prueba y se realizaron consultas SELECT básicas para vis
 ## Cómo ejecutar
 
 ### en bash
-sqlite3 mi_dominio.db < proyecto.sql
-sqlite3 mi_dominio.db
+sqlite3 tienda_bicicletas.db < proyecto1.sql
+sqlite3 tienda_bicicletas.db
