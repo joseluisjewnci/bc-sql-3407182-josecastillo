@@ -116,8 +116,8 @@ Se utilizaron modelos reales de marcas reconocidas como:
 
 ## Crear y ejecutar la base de datos en bash:
 
-sqlite3 mi_dominio.db < proyecto4.sql
-sqlite3 mi_dominio.db
+sqlite3 tienda_bicicletas.db < proyecto4.sql
+sqlite3 tienda_bicicletas.db
 ---
 
 ### Autor
