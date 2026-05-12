@@ -50,6 +50,8 @@ El sistema permite almacenar:
 
 # ▶️ Cómo ejecutar el proyecto
 
+para traer la db desde semana 1 se uso git checkout week-01-introduccion_bases_de_datos_relacionales -- tienda_bicicletas.db
+
 ## 1. Abrir la terminal
 
 Ubicarse en la carpeta donde está el archivo:
