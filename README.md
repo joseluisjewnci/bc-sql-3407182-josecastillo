@@ -74,7 +74,7 @@ Consulta utilizando BETWEEN, IN, LIKE y AND.
 Ejecutar el archivo SQL con bash
 
 sqlite3 tienda_bicicletas.db < proyecto5.sql
-sqlite3 tienda_bicicletas.db}
+sqlite3 tienda_bicicletas.db
 .read proyecto5.sql
 --- 
 ### Autor
