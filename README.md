@@ -56,3 +56,54 @@ Ubicarse en la carpeta donde está el archivo:
 
 ```bash
 cd Documents/sql
+```
+
+## 2. Ejecutar el archivo SQL
+
+```bash
+sqlite3 tienda_bicicletas.db < proyecto6.sql
+```
+
+## 3. Abrir la base de datos
+
+```bash
+sqlite3 tienda_bicicletas.db
+```
+
+## 4. Ver las tablas
+
+```sql
+.tables
+```
+
+---
+
+# 📊 Consultas implementadas
+
+## Reporte 1 — Totales globales
+
+- Total de bicicletas
+- Suma total de precios
+- Promedio de precios
+
+## Reporte 2 — Valores extremos
+
+- Precio mínimo
+- Precio máximo
+
+## Reporte 3 — GROUP BY
+
+Agrupación de bicicletas por marca calculando:
+
+- cantidad de modelos
+- promedio de precios
+
+## Reporte 4 — HAVING
+
+Filtra marcas que tienen más de 2 modelos registrados.
+
+---
+
+# 👨‍💻 Autor
+
+José Luis Castillo Cañas
