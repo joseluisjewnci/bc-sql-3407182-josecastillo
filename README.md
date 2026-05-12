@@ -30,10 +30,10 @@ Registra las reparaciones realizadas a las bicicletas. Tiene relación con bikes
 ## Cómo ejecutar
 
 1. Crear la base de datos y ejecutar el script:
-    sqlite3 mi_dominio.db < proyecto2.sql
+    sqlite3 tienda_bicicletas.db < proyecto2.sql
 
 2. Abrir la base de datos:
-    sqlite3 mi_dominio.db
+    sqlite3 tienda_bicicletas.db
 
 3. Ver las tablas:
 .tables
