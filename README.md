@@ -50,15 +50,18 @@ El sistema permite almacenar:
 
 # ▶️ Cómo ejecutar el proyecto
 
-para traer la db desde semana 1 se uso git checkout week-01-introduccion_bases_de_datos_relacionales -- tienda_bicicletas.db
+Para traer la base de datos desde la Semana 01 se utilizó:
+
+```bash
+git checkout week-01-introduccion_bases_de_datos_relacionales -- tienda_bicicletas.db
+```
 
 ## 1. Abrir la terminal
 
 Ubicarse en la carpeta donde está el archivo:
 
-```bash
-cd Documents/sql
-```
+bash
+
 
 ## 2. Ejecutar el archivo SQL
 
@@ -71,8 +74,12 @@ sqlite3 tienda_bicicletas.db < proyecto6.sql
 ```bash
 sqlite3 tienda_bicicletas.db
 ```
+## 4. Ejecutar nuevamente el script dentro de SQLite
 
-## 4. Ver las tablas
+```sql
+.read proyecto6.sql
+```
+## 5. Ver las tablas
 
 ```sql
 .tables
