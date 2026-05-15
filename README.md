@@ -74,6 +74,9 @@ Consulta utilizando BETWEEN, IN, LIKE y AND.
 Ejecutar el archivo SQL con bash
 
 sqlite3 tienda_bicicletas.db < proyecto5.sql
+
+En este proyecto la base de datos ya se encuentra creada, por lo tanto también puede ejecutarse así:
+
 sqlite3 tienda_bicicletas.db
 .read proyecto5.sql
 --- 
