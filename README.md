@@ -6,13 +6,13 @@ Este proyecto corresponde a la Semana 07 del bootcamp de SQL.
 
 El objetivo es aplicar restricciones de integridad y manejo de valores NULL en SQLite mediante el uso de:
 
-- NOT NULL
-- UNIQUE
-- CHECK
-- DEFAULT
-- FOREIGN KEY
-- IS NULL
-- COALESCE
+* NOT NULL
+* UNIQUE
+* CHECK
+* DEFAULT
+* FOREIGN KEY
+* IS NULL
+* COALESCE
 
 ---
 
@@ -20,8 +20,8 @@ El objetivo es aplicar restricciones de integridad y manejo de valores NULL en S
 
 El proyecto contiene las siguientes tablas:
 
-- categories
-- bikes
+* categories
+* bikes
 
 ---
 
@@ -31,17 +31,18 @@ Sistema de gestión para una tienda de bicicletas.
 
 El sistema permite almacenar:
 
-- categorías de bicicletas
-- bicicletas
-- precios
-- inventario
-- colores opcionales
+* categorías de bicicletas
+* bicicletas
+* precios
+* inventario
+* colores opcionales
 
 ---
 
 # ⚙️ Tecnologías utilizadas
 
-- SQLite3
+* SQLite3
+* SQL
 
 ---
 
@@ -49,7 +50,7 @@ El sistema permite almacenar:
 
 ## 1. Abrir la terminal
 
-Ubicarse en la carpeta donde está el archivo:
+Ubicarse en la carpeta donde está el archivo.
 
 ## 2. Ejecutar el archivo SQL
 
@@ -85,14 +86,14 @@ Se utiliza para garantizar que los campos obligatorios siempre tengan un valor.
 
 Columnas:
 
-- categories.name
-- bikes.brand
-- bikes.model
-- bikes.serial_number
-- bikes.price
-- bikes.stock
-- bikes.category_id
-- bikes.is_active
+* categories.name
+* bikes.brand
+* bikes.model
+* bikes.serial_number
+* bikes.price
+* bikes.stock
+* bikes.category_id
+* bikes.is_active
 
 ---
 
@@ -102,8 +103,8 @@ Se utiliza para evitar valores duplicados.
 
 Columnas:
 
-- categories.name
-- bikes.serial_number
+* categories.name
+* bikes.serial_number
 
 ---
 
@@ -125,7 +126,8 @@ CHECK(stock >= 0)
 Se asigna un valor por defecto al estado de la bicicleta.
 
 ```sql
-is`
+is_active INTEGER NOT NULL DEFAULT 1
+```
 
 ---
 
@@ -154,8 +156,7 @@ WHERE color IS NULL;
 ```
 
 ---
-_active INTEGER NOT NULL DEFAULT 1
-``
+
 ## Consulta 2 — COALESCE
 
 Reemplaza los valores NULL por un texto descriptivo.
@@ -174,14 +175,12 @@ FROM bikes;
 
 El proyecto incluye:
 
-- 3 categorías
-- 30 bicicletas
-- 3 bicicletas con valor NULL en la columna color
+* 3 categorías
+* 30 bicicletas
+* 3 bicicletas con valor NULL en la columna color
 
 ---
 
 # 👨‍💻 Autor
 
 José Luis Castillo Cañas
-
-
