@@ -177,4 +177,4 @@ FROM bikes b
 LEFT JOIN sales s
 ON b.id = s.bike_id
 GROUP BY b.id, b.brand, b.model
-ORDER BY total_ventas DESC;
+ORDER BY total_ventas DESC
