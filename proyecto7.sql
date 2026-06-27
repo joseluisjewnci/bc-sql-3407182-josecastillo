@@ -9,7 +9,9 @@ PRAGMA foreign_keys = ON;
 -- ============================================
 -- LIMPIEZA
 -- ============================================
-
+DROP TABLE IF EXISTS sales;
+DROP TABLE IF EXISTS repairs ;
+DROP TABLE IF EXISTS parts;
 DROP TABLE IF EXISTS bikes;
 DROP TABLE IF EXISTS categories;
 
